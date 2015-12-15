@@ -37,6 +37,11 @@ angular.module(ApplicationConfiguration.applicationModuleName).run(function ($ro
       }
     }
   });
+  $rootScope.$on('$stateChangeSuccess',function(){
+    //$("html, body").animate({ scrollTop: 0 }, 200);
+    window.scrollTo(0, 0);
+
+  })
 
   // Record previous state
   $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
