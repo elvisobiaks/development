@@ -39,6 +39,15 @@ angular.module('menuconfig').run(['Menus',
           type: '',
           roles: ['*']
         });
+      /**
+       * Frequently asked question
+       */
+      Menus.addMenuItem('topbar', {
+        title: 'FAQs',
+        state: 'faq',
+        type: '',
+        roles: ['*']
+      });
         /**
          * Contact Us
          */

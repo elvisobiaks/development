@@ -2,12 +2,10 @@
 
 // Articles controller
 angular.module('contactus').controller('ContactUsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Articles',
-	function ($scope, $stateParams, $location, Authentication, Articles, ngMap) {
+	function ($scope, $stateParams, $location, Authentication, Articles) {
 		$scope.authentication = Authentication;
 
 		var vm = this;
-		vm.resultMessage = '';
-
 		function init_map() {
 			//ngMap.getMap().then(function(map) {
 			//	console.log(map.getCenter());
