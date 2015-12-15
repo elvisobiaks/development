@@ -1,5 +1,5 @@
 // Articles controller
-
+'use strict';
 angular.module('faq').controller('FAQController', ['$scope', '$stateParams', '$location', 'Authentication', 'Articles',
 	function ($scope, $stateParams, $location, Authentication, Articles) {
 		$scope.authentication = Authentication;
