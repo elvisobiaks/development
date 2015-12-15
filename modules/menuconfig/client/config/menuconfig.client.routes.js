@@ -15,9 +15,13 @@ angular.module('menuconfig').config(['$stateProvider',
             url: '/team',
             templateUrl: 'modules/ourteam/client/views/ourteam.html'
           })
+          .state('services', {
+            url: '/services',
+            templateUrl: 'modules/services/client/views/services.html'
+          })
           .state('faq', {
             url: '/faq',
-           templateUrl: 'modules/faq/client/views/faq.html'
+            templateUrl: 'modules/faq/client/views/faq.html'
           });
     }
 ]);

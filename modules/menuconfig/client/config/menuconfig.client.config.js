@@ -11,7 +11,7 @@ angular.module('menuconfig').run(['Menus',
          */
       Menus.addMenuItem('topbar', {
           title: 'Services',
-          state: 'service',
+          state: 'services',
           type: '',
           roles: ['*']
         });

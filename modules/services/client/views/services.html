@@ -1,0 +1,40 @@
+<div>
+  <br/>
+  <br/>
+  <br/>
+  <div class="border row" ng-controller="ServicesController as ctrl">
+    <legend class="text-center header">Our Services</legend>
+    <div class="border col-sm-3">
+      Will insert Image here <br/><br/>
+      <p readMore>
+        {{ctrl.service1}}
+      </p>
+        <button ng-show="{{ctrl.visible}}" type="button" id="content1More"class="btn btn-primary" ng-click="ctrl.service1 = ctrl.savingsService">more...</button>
+        <button type="button" id="content1Less" class="btn btn-primary" ng-click="ctrl.service1 = ctrl.truncate(ctrl.savingsService); ctrl.visible = false">less...</button>
+      </div>
+    <div class="border col-sm-3">
+      Will insert Image here <br/><br/>
+      <p readMore>
+        {{ctrl.service2}}
+      </p>
+      <button type="button" id="content2More"class="btn btn-primary" ng-click="ctrl.service2 = ctrl.savingsService">more...</button>
+      <button type="button" id="content2Less" class="btn btn-primary" ng-click="ctrl.service2 = ctrl.truncate(ctrl.savingsService);">less...</button>
+    </div>
+    <div class="border col-sm-3">
+      Will insert Image here <br/><br/>
+      <p readMore>
+        {{ctrl.service3}}
+      </p>
+      <button type="button" id="content3More"class="btn btn-primary" ng-click="ctrl.service3 = ctrl.savingsService">more...</button>
+      <button type="button" id="content3Less" class="btn btn-primary" ng-click="ctrl.service3 = ctrl.truncate(ctrl.savingsService);">less...</button>
+    </div>
+    <div class="border col-sm-3">
+      Will insert Image here <br/><br/>
+      <p readMore>
+        {{ctrl.service4}}
+      </p>
+      <button type="button" id="content4More"class="btn btn-primary" ng-click="ctrl.service4 = ctrl.savingsService">more...</button>
+      <button type="button" id="content4Less" class="btn btn-primary" ng-click="ctrl.service4 = ctrl.truncate(ctrl.savingsService);">less...</button>
+    </div>
+  </div>
+</div>

@@ -5,7 +5,7 @@ angular.module('faq').controller('FAQController', ['$scope', '$stateParams', '$l
 		$scope.authentication = Authentication;
 
 		var vm = this;
-		vm.resultMessage = "Test"
+		vm.resultMessage = "Test";
 
 		vm.items = [
 			{
