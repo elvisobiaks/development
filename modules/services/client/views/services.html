@@ -9,32 +9,49 @@
       <p readMore>
         {{ctrl.service1}}
       </p>
-        <button ng-show="{{ctrl.visible}}" type="button" id="content1More"class="btn btn-primary" ng-click="ctrl.service1 = ctrl.savingsService">more...</button>
-        <button type="button" id="content1Less" class="btn btn-primary" ng-click="ctrl.service1 = ctrl.truncate(ctrl.savingsService); ctrl.visible = false">less...</button>
+        <button ng-show="ctrl.service1MoreToggle" type="button" id="content1More"class="btn btn-primary"
+                ng-click="ctrl.service1 = ctrl.savingsService ;service1LessToggle = !service1LessToggle;
+              ctrl.service1MoreToggle = false">more...</button>
+        <button ng-show="service1LessToggle" type="button" id="content1Less" class="btn btn-primary"
+                ng-click="ctrl.service1 = ctrl.truncate(ctrl.savingsService); service1LessToggle = false;
+              ctrl.service1MoreToggle = true">less...</button>
       </div>
     <div class="border col-sm-3">
       Will insert Image here <br/><br/>
       <p readMore>
         {{ctrl.service2}}
       </p>
-      <button type="button" id="content2More"class="btn btn-primary" ng-click="ctrl.service2 = ctrl.savingsService">more...</button>
-      <button type="button" id="content2Less" class="btn btn-primary" ng-click="ctrl.service2 = ctrl.truncate(ctrl.savingsService);">less...</button>
+      <button ng-show="ctrl.service2MoreToggle" type="button" id="content2More"class="btn btn-primary"
+              ng-click="ctrl.service2 = ctrl.savingsService ;service2LessToggle = !service2LessToggle;
+              ctrl.service2MoreToggle = false">more...</button>
+      <button ng-show="service2LessToggle" type="button" id="content2Less" class="btn btn-primary"
+              ng-click="ctrl.service2 = ctrl.truncate(ctrl.savingsService); service2LessToggle = false;
+              ctrl.service2MoreToggle = true">less...</button>
     </div>
     <div class="border col-sm-3">
       Will insert Image here <br/><br/>
       <p readMore>
         {{ctrl.service3}}
       </p>
-      <button type="button" id="content3More"class="btn btn-primary" ng-click="ctrl.service3 = ctrl.savingsService">more...</button>
-      <button type="button" id="content3Less" class="btn btn-primary" ng-click="ctrl.service3 = ctrl.truncate(ctrl.savingsService);">less...</button>
+      <button ng-show="ctrl.service3MoreToggle" type="button" id="content3More"class="btn btn-primary"
+              ng-click="ctrl.service3 = ctrl.savingsService ; service3LessToggle = !service3LessToggle;
+              ctrl.service3MoreToggle = false">more...</button>
+      <button ng-show="service3LessToggle" type="button" id="content3Less" class="btn btn-primary"
+              ng-click="ctrl.service3 = ctrl.truncate(ctrl.savingsService); service3LessToggle = false;
+              ctrl.service3MoreToggle = true">less...</button>
+
     </div>
     <div class="border col-sm-3">
       Will insert Image here <br/><br/>
       <p readMore>
         {{ctrl.service4}}
       </p>
-      <button type="button" id="content4More"class="btn btn-primary" ng-click="ctrl.service4 = ctrl.savingsService">more...</button>
-      <button type="button" id="content4Less" class="btn btn-primary" ng-click="ctrl.service4 = ctrl.truncate(ctrl.savingsService);">less...</button>
+      <button ng-show="ctrl.service4MoreToggle"type="button" id="content4More"class="btn btn-primary"
+              ng-click="ctrl.service4 = ctrl.savingsService ; service4LessToggle = !service4LessToggle;
+              ctrl.service4MoreToggle = false">more...</button>
+      <button ng-show="service4LessToggle" type="button" id="content4Less" class="btn btn-primary"
+              ng-click="ctrl.service4 = ctrl.truncate(ctrl.savingsService); service4LessToggle = false;
+              ctrl.service4MoreToggle = true">less...</button>
     </div>
   </div>
 </div>
