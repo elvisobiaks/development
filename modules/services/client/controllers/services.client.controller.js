@@ -21,7 +21,7 @@ angular.module('services').controller('ServicesController', ['$scope', '$statePa
 			else {
 				return String(text).substring(0, length-end.length) + end;
 			}
-		}
+		};
 
 		vm.service1MoreToggle = true;
 		vm.service2MoreToggle = true;
