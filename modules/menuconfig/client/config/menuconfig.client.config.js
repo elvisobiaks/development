@@ -27,9 +27,13 @@ angular.module('menuconfig').run(['Menus',
 
         // Add the dropdown list item
       Menus.addSubMenuItem('topbar', 'calculator', {
-          title: 'Investment Calculator',
-          state: 'calculator.investment'
+          title: 'Savings Calculator',
+          state: 'calculator.savings'
         });
+      Menus.addSubMenuItem('topbar', 'calculator', {
+        title: 'Retirement Calculator',
+        state: 'calculator.retirement'
+      });
         /**
          * Meet the Team
          */

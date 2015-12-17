@@ -30,6 +30,11 @@
       </li>
     </ul>
     <ul class="nav navbar-nav navbar-right" ng-show="authentication.user">
+      <li>
+        <a ui-sref="portfolio">
+          <span class="glyphicon glyphicon-dashboard"> Portfolio</span>
+        </a>
+      </li>
       <li class="dropdown" dropdown>
         <a class="dropdown-toggle user-header-dropdown-toggle" dropdown-toggle role="button">
           <img ng-src="{{authentication.user.profileImageURL}}" alt="{{authentication.user.displayName}}" class="header-profile-image" />
@@ -57,11 +62,6 @@
             <a href="/api/auth/signout" target="_self">Signout</a>
           </li>
         </ul>
-      </li>
-      <li>
-        <a ui-sref="portfolio">
-          <span class="glyphicon glyphicon-dashboard"> Portfolio</span>
-        </a>
       </li>
     </ul>
   </nav>

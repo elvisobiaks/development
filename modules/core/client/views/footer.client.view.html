@@ -9,7 +9,7 @@
   <br/>
   <br/>
   <br/>
-  <div id="main">
+  <div id="main" ng-controller="HeaderController">
   <footer>
     <ul>
     <div class="border row">
@@ -47,8 +47,10 @@
         <li>
           <p class="clients">Clients</p>
           <ul>
-            <li><a ui-sref="authentication.signin">Sign In</a></li>
-            <li><a ui-sref="authentication.signup">Sign Up</a></li>
+            <div ng-show="!authentication.user">
+              <li><a ui-sref="authentication.signin">Sign In</a></li>
+              <li><a ui-sref="authentication.signup">Sign Up</a></li>
+            </div>
             <!--<li><a href="#">Support Center</a></li>-->
             <li><a ui-sref="faq">FAQ</a></li>
           </ul>
